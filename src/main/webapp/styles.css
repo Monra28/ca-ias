@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('C:/Users/ALUMNO/Desktop/AusenTec/F1.png') no-repeat center center fixed; /* Fondo de la página (fondo azul) */
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)); /* Sombreado con gradiente */
+    background-size: cover;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    text-align: center;
+    position: relative;
+}
+
+nav ul li img {
+    height: 24px;
+    width: 24px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1px 45px; /* Reducir el padding para hacer más compactos los botones */
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: linear-gradient(45deg, #004080, #0073e6); /* Gradiente de tonos azules */
+    color: white; /* Contraste de color para el texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidad */
+}
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.casos-prioritarios,
+.eventos-proximos {
+    background: linear-gradient(rgba(38, 103, 255    ), rgba(132, 150, 215    )); /* Sombra verde con gradiente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+
+.casos-prioritarios h2,
+.eventos-proximos h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+table thead th {
+    background:rgb(47, 72, 130    ); /* Gradiente de tonos azules */
+}
+
+table tbody tr:nth-child(even) {
+    background: rgb(47, 72, 130  ); /* Gradiente de tonos azules */
+}
+
+table img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pagination a {
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #005ad0; /* Número de página */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #1E8449;
+}
+
+.eventos-proximos ul {
+    list-style: none;
+}
+
+.eventos-proximos ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.eventos-proximos ul li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+}
